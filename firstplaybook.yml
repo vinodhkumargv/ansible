@@ -1,0 +1,7 @@
+---
+- hosts: hostB
+  tasks:
+      - name: Create file
+        file:
+            path: /home/yallo
+            state: touch

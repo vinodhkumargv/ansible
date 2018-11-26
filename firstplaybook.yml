@@ -1,7 +1,7 @@
 ---
-- hosts: hostB
+- hosts: localhost
   tasks:
       - name: Create file
         file:
-            path: /home/yallo
+            path: S:/TestAnsible
             state: touch

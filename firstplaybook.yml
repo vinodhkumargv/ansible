@@ -1,7 +1,3 @@
 ---
-- hosts: localhost
-  tasks:
-      - name: Create file
-        file:
-            path: S:/TestAnsible
-            state: touch
+    - name: run a command under PowerShell
+      win_shell: get-service | Export-Csv S:\TestAnsible.csv

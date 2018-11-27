@@ -1,3 +1,6 @@
----
-    - name: run a command under PowerShell
-      win_shell: get-service | Export-Csv S:\TestAnsible.csv
+--- 
+- 
+  name: "create Development folder"
+  win_file: 
+    path: "C:\\DevelopmentTest"
+    state: directory
